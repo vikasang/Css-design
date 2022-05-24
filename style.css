@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(65, 72, 72,0.6);
+    display: grid;
+    place-items: center;
+}
+.house{
+
+    width: 565px;
+    height: 450px;
+    background-color:white;
+    position: relative; 
+    perspective: 224px;
+}
+.main-roof{
+    width: 115%;
+height: 150px;
+background-color: hsla(226, 93%, 29%, 0.911);
+position: relative;
+top: -33px;
+left: -42px;
+transform: rotateX(20deg);
+border-radius: 10px 10px 5px 5px;
+box-shadow: 2px 2px 15px hsla(226, 93%, 29%, 0.911);
+box-shadow: whitesmoke;
+}
+.window{
+
+   width: 9rem;
+   height:11rem;
+   background-color: #aaa;
+   border: 2px solid black;
+   position: absolute;
+}
+.window::before{
+content:'';
+width: 500px;
+height: 20px;
+color: rgb(68, 8, 8);
+position: absolute;
+top: 50px;
+left: 0%;
+}
+.window::after{
+    content:'';
+    width: 5px;
+    height: 100%;
+    color: rgb(68, 8, 8);
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform:translateX(-50%);
+}
+   
+.top-left-window{
+    top: 132px;
+    left: 32px;
+    border-radius: 50% 50% 0 0;
+}
+.top-right-window{
+    top: 132px;
+    right: 32px;
+    border-radius: 50% 50% 0 0;
+}
+.bottom-left-window{
+    bottom: 30px;
+    left: 32px;
+}
+.bottom-right-window{
+    bottom: 30px;
+    right: 32px;
+    color: white
+}
+.room{
+    width: 199px;
+height: 364px;
+position: absolute;
+background: #f2f0f0;
+top: 81px;
+left: 50%;
+bottom: 0px;
+transform: translateX(-50%);
+perspective: 200px;
+}
+.room-roof{
+    width: 123%;
+height: 100px;
+background-color: hsla(226, 93%, 29%, 0.911);
+position: absolute;
+top: -18px;
+left: -26px;
+transform: translateX(30deg);
+transform: rotateX(12deg);
+box-shadow: 2px 3px 15px  hsla(226, 93%, 29%, 0.911);
+border-radius: 5px 5px 2px 2px;
+}
+.top-window{
+    width: 60%;
+    height: 132px;
+    background-color: #621111;
+    position: absolute;
+    top: 94px;
+    left: 50;
+    left: 45%;
+    transform: translateX(-50px);
+    border-radius: 50% 50% 2px 2px;
+    border: 2px solid rgba(39, 3, 3, 0.787);
+
+}
+.top-window-left{
+    width: 49.5%;
+height: 100%;
+background-color: black;
+position: absolute;
+top: 0px;
+left: 0px;
+border-top-left-radius: 50rem;
+
+}
+.door-frame{
+    width: 21%;
+height: 134px;
+background-color: brown;
+position: absolute;
+left: 224px;
+top: 316px;
+}
